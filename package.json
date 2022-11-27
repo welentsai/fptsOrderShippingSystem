@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start:build": "tsc -w",
     "start:run": "nodemon ./out/index.js",
-    "dev": "concurrently \"tsc -w \" \"nodemon ./out/index.js \" "
+    "dev": "concurrently \"tsc -w \" \"nodemon ./out/index.js \" ",
+    "test": "vitest"
   },
   "repository": {
     "type": "git",
@@ -20,9 +20,12 @@
   },
   "homepage": "https://github.com/welentsai/fptsOrderShippingSystem#readme",
   "devDependencies": {
+    "@types/node": "^18.11.9",
     "concurrently": "^7.6.0",
+    "fp-ts": "^2.13.1",
     "nodemon": "^2.0.20",
     "ts-node": "^10.9.1",
-    "typescript": "^4.9.3"
+    "typescript": "^4.9.3",
+    "vitest": "^0.25.3"
   }
 }
