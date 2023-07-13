@@ -34,16 +34,16 @@ export type OrderPlaced = TEvent<
   }
 >
 
-type OrderCancelled = TEvent<
+export type OrderCancelled = TEvent<
   'OrderCancelled',
   {
     reason: string
   }
 >
 
-type OrderFullfilled = TEvent<'OrderFullfilled', {}>
+export type OrderFullfilled = TEvent<'OrderFullfilled', {}>
 
-type PaymentRequested = TEvent<
+export type PaymentRequested = TEvent<
   'PaymentRequested',
   {
     order_id: string
@@ -51,5 +51,5 @@ type PaymentRequested = TEvent<
   }
 >
 
-type PaymentPaid = TEvent<'PaymentPaid', {}>
-type PaymentCancelled = TEvent<'PaymentCancelled', {}>
+export type PaymentPaid = TEvent<'PaymentPaid', {}>
+export type PaymentCancelled = TEvent<'PaymentCancelled', {}>
